@@ -32,6 +32,11 @@ p, li {
 
 .footer a {
   color: white;
+  -webkit-transition-duration: 0.1s;
+}
+.footer a:hover {
+  color: #366286;
+  -webkit-transition-duration: 0.1s;
 }
 
 .wrapper a {
