@@ -5,7 +5,7 @@
 
 body {
   width: 100%;
-  background-color: ;
+  background-color: #4F8DC0;
 }
 
 p {
@@ -14,9 +14,15 @@ p {
 }
 
 .wrapper {
-  width: 90%;
+  width: 70%;
   background-color: white;
   margin: 0 auto;
+  padding: 5%;
+}
+
+footer {
+  font-size: 1.5em;
+  text-align: center;
 }
 
 
