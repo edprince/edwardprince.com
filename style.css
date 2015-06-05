@@ -6,9 +6,10 @@
 body {
   width: 100%;
   background-color: #4F8DC0;
+  overflow-x: hidden;
 }
 
-p {
+p, li {
   text-align: justify;
   font-size: 1.2em;
   color: #616161;
@@ -19,6 +20,7 @@ p {
   background-color: white;
   margin: 0 auto;
   padding: 5%;
+  margin-top: 2%;
 }
 
 .footer {
@@ -36,6 +38,8 @@ p {
   color: #71ABE4;
 }
 
-
+h2 {
+  font-size: 2.5em;
+}
 
 
