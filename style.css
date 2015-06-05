@@ -25,7 +25,15 @@ p {
   font-size: 3.5em;
   text-align: center;
   color: white;
+}
 
+.footer a {
+  color: white;
+}
+
+.wrapper a {
+  text-decoration: none;
+  color: #71ABE4;
 }
 
 
