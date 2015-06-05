@@ -3,4 +3,21 @@
   color: grey;
 }
 
+body {
+  width: 100%;
+  background-color: ;
+}
+
+p {
+  text-align: justified;
+  font-size: 1.2em;
+}
+
+.wrapper {
+  width: 90%;
+  background-color: white;
+}
+
+
+
 
