@@ -1,5 +1,5 @@
 * {
-  font-family: helvetica;
+  font-family: 'Raleway', sans-serif;
   
 }
 
@@ -13,6 +13,7 @@ p, li {
   text-align: justify;
   font-size: 1.2em;
   color: #616161;
+  font-weight: 300;
 }
 
 .wrapper {
