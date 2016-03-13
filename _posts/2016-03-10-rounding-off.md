@@ -9,7 +9,7 @@ Coming to the end of the project, we have done our presentation, received
 feedback on usability and touched up. We have improved a few things, including
 the bug that was stopping the items from displaying in the inventory correctly.
 
-#Individual Feature#
+#Individual Feature
 
 I have added an extra feature that tracks all the robots movements, displays on
 the map where it has been, and calculates what percentage of the map has been
