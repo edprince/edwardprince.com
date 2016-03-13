@@ -1,0 +1,55 @@
+<h2 id="pygame">Pygame</h2>
+<p>This week I have started implementing some stuff with Pygame, mainly as a trial
+run to see how viable it seems for this project.</p>
+
+<p>I have created a simple 2D tile-based map with simple textures to play around.
+The map is using the following data format:</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="nb">map</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">]]</span></code></pre></div>
+
+<p>So there are multiple lists within lists. Each sub list represents a row, and
+the containing list represents the columns. The numbers represent the type of
+tile, so for example in my work I had:</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">GRASS</span> <span class="o">=</span> <span class="mi">1</span>  
+<span class="n">STONE</span> <span class="o">=</span> <span class="mi">2</span>  
+<span class="n">DIRT</span> <span class="o">=</span> <span class="mi">3</span>  
+<span class="n">WATER</span> <span class="o">=</span> <span class="mi">4</span>  
+<span class="n">SAND</span> <span class="o">=</span> <span class="mi">5</span>  
+<span class="n">etc</span><span class="o">.</span></code></pre></div>
+
+<p>This meant each value in the map list corresponds to one of the tile types.</p>
+
+<h1 id="map-parser">Map Parser</h1>
+<p>Originally, I had the same list set up for creating the maps, but values being
+the tile types, but shortly found this was taking far too long to efficiently
+work with, so I decided to create the maps in a text file, with different
+characters representing the different tiles, and then wrote a parser in Python
+that would read the file and build the map list accordingly.</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">parse_map</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;Parses map data into lists</span>
+
+<span class="sd">    Takes characters and if matching tile types, builds a list within a list of</span>
+<span class="sd">    entire map&#39;&#39;&#39;</span>
+    <span class="n">tilemap_tmp</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">line</span> <span class="o">==</span> <span class="s">&#39;#&#39;</span><span class="p">:</span>
+            <span class="n">tilemap_tmp</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">SAND</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="n">line</span> <span class="o">==</span> <span class="s">&#39;~&#39;</span><span class="p">:</span>
+            <span class="n">tilemap_tmp</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">WATER</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="n">line</span> <span class="o">==</span> <span class="s">&#39;v&#39;</span><span class="p">:</span>
+            <span class="n">tilemap_tmp</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">SAND</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="n">line</span> <span class="o">==</span> <span class="s">&#39;_&#39;</span><span class="p">:</span>
+            <span class="n">tilemap_tmp</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">GRASS</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="n">line</span> <span class="o">==</span> <span class="s">&#39;&quot;&#39;</span><span class="p">:</span>
+            <span class="n">tilemap_tmp</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">DIRT</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="n">line</span> <span class="o">==</span> <span class="s">&#39;=&#39;</span><span class="p">:</span>
+            <span class="n">tilemap_tmp</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">WOOD</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="n">line</span> <span class="o">==</span> <span class="s">&#39;/&#39;</span><span class="p">:</span>
+            <span class="n">tilemap</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">tilemap_tmp</span><span class="p">)</span>
+            <span class="k">print</span> <span class="n">tilemap_tmp</span>
+            <span class="n">tilemap_tmp</span> <span class="o">=</span> <span class="p">[]</span></code></pre></div>
+
+<p><img src="http://i.imgur.com/COsNT3x.png" alt="Map" /></p>
+
