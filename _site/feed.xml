@@ -6,8 +6,8 @@
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 13 Mar 2016 03:53:54 +0000</pubDate>
-    <lastBuildDate>Sun, 13 Mar 2016 03:53:54 +0000</lastBuildDate>
+    <pubDate>Sun, 13 Mar 2016 08:55:17 +0000</pubDate>
+    <lastBuildDate>Sun, 13 Mar 2016 08:55:17 +0000</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -20,6 +20,84 @@
         <pubDate>Sun, 13 Mar 2016 23:59:05 +0000</pubDate>
         <link>http://yourdomain.com/jekyll/update/2016/03/13/test.html</link>
         <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2016/03/13/test.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>Test</title>
+        <description>&lt;p&gt;Coming to the end of the project, we have done our presentation, received
+feedback on usability and touched up. We have improved a few things, including
+the bug that was stopping the items from displaying in the inventory correctly.&lt;/p&gt;
+
+&lt;h1 id=&quot;individual-feature&quot;&gt;Individual Feature&lt;/h1&gt;
+
+&lt;p&gt;I have added an extra feature that tracks all the robots movements, displays on
+the map where it has been, and calculates what percentage of the map has been
+covered.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/cxH6P2q.png&quot; alt=&quot;Traced-map&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In order to calculate the percentage of the map covered, I wrote the following
+function:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;calculate_percentage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;covered&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;totalW&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;totalH&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;sd&quot;&gt;&amp;#39;&amp;#39;&amp;#39;Function calculate how much of map is visited&lt;/span&gt;
+&lt;span class=&quot;sd&quot;&gt;    Takes 2 lists and compares to see how much of the ground has been visited&amp;#39;&amp;#39;&amp;#39;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;uniqueTiles&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;totalW&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;j&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;totalH&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;covered&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;uniqueTiles&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;uniqueTiles&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;totalW&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;totalH&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;evaluation-of-the-project&quot;&gt;Evaluation of the project&lt;/h3&gt;
+
+&lt;p&gt;Overall I think the project has been mixed with regards to it’s success, there
+are some things I feel have worked very well, and other aspects that can without
+doubt be chalked down to experience.&lt;/p&gt;
+
+&lt;p&gt;The first successful area of this project has been its management, and use of
+software to keep everybody up to date with progress.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://quickfixes.github.io/just-gittin-started/img/octocat.png&quot; alt=&quot;Github octocat&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The place to begin is with the most important management tool of the lot - GitHub.
+It has been vital for the progress and success of this project, that we successfully 
+used a version control system. GitHub has been magnificent, and although confusing for
+some members of the team who had never used it before, proved invaluable right the way
+to the end. We were able to commit code, revert to earlier builds, use branches for individual
+features, raise issues, assign tasks, view each others work, and integrate other software.&lt;/p&gt;
+
+&lt;p&gt;Other such software included Travis CI.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://workablehr.s3.amazonaws.com/uploads/account/logo/11901/large_Mascot-fullcolor-png.png&quot; alt=&quot;Travis CI logo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Although for this project, it was largely irrelevant, Travis was a really cool
+service to successfully employ, more as an investment for future projects. With
+Travis CI, I was able to write unit tests that could test functions, and every
+time any code was commited, it would run the tests to make sure the functions
+were still being run correctly, if not, it would fail the build, alert me via
+email, and change the badge on the repository readme to ‘build: failing’.&lt;/p&gt;
+
+&lt;p&gt;Lastly, I feel the presentation was done well, and possibly the first time the
+group really pulled together a bit more. I think future projects will require
+far more communication, better delegation of work to individuals, and a more in
+depth analysis at the start, with a stronger focus on design. As a process, it
+has been fantastic, and very, very rewarding, seeing a project come from pen and
+paper, to a real product. And that’s it from me for this project.&lt;/p&gt;
+
+&lt;p&gt;Follow me on Twitter and GitHub to keep up to date with my work, and to see more
+blogs on future projects.&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 10 Mar 2016 23:13:05 +0000</pubDate>
+        <link>http://yourdomain.com/jekyll/update/2016/03/10/rounding-off.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2016/03/10/rounding-off.html</guid>
         
         
         <category>jekyll</category>

@@ -11,10 +11,10 @@ layout: default
 <section id="main" class="wrapper style1">
     {% for post in site.posts %}
         <div class="wrapper {% cycle 'style1', 'style2' %}">
-            <header class="major">
+            <header class="major inner">
                 <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
             </header>
-            <section class="container">
+            <section class="container inner">
                 {{ post.excerpt }}
             </section>
             <section class="special">
