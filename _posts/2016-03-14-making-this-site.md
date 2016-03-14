@@ -36,7 +36,7 @@ one night. Not a bad turn around.
 
 ### Challenges
 
-First are foremost, Jekyll is a blogging platform, and yet the theme I have
+First and foremost, Jekyll is a blogging platform, and yet the theme I have
 used, didn't include any blog templates, so that's where a bit of thinking is
 done. I was able to copy the blog functionality from an older jekyll site I
 maintain, and integrate it - not exactly seamlessly - into this site. The
@@ -68,13 +68,13 @@ categories: category-of-some-kind
 
 The layout is telling Liquid how to present the rest of the page (excluding the
 post content), the title is what will be displayed at the top of the post, and
-the data below that. Then we can add categories for self explanatory reasons.
+the date below that. Then we can add categories for self explanatory reasons.
 What does this mean? So, without writing any HTML, we can start writing our post
 in markdown.
 
 The layouts reside in a `_layouts/` directory, at the same level as `_posts/`.
 Inside we can have as many layouts as we want. For example, you could have some
-blog posts that were on the left hand site, with a sidebar on the right, and a
+blog posts that were on the left hand side, with a sidebar on the right, and a
 different layout that had the sidebar on the left and the post content on the
 right. 
 
@@ -83,7 +83,7 @@ save a <strong>lot</strong> of time. In here we can have a `head.html` file,
 which contains all the links to external CSS/Javascript, meta tags, the lot,
 anything you would put in the head of a standard HTML file. Then, instead of
 having to write it at the top of each page on your site, you can simply include
-it using {% raw %} `{% include head.html %}` {% endraw %} on each layout you want it to be included for
+it using {% raw %} `{% include head.html %}` {% endraw %} on each layout you want it to be included in
 (which is probably every layout). 
 
 This has already been a pretty long post, so I'll cut it there for now, but will
