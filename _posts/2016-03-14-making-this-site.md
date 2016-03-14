@@ -52,7 +52,7 @@ a bit more about how Jekyll works. It uses a template engine called **Liquid**.
 This is where Jekyll really begins coming into its own. Using liquid, we are
 able to render markdown as HTML, include HTML files into others and a whole raft
 of other things we will get into. So, each post I write is a new file that
-belongs in the `_posts/` directory, and it must be names in the following
+belongs in the `_posts/` directory, and it must be named with the following
 format: `yyyy-mm-dd-some-name.md`. This allows the engine to work out what it is
 and where it should go. Now that we've done this, we get into Liquid.
 
