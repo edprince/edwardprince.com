@@ -6,103 +6,104 @@
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 13 Mar 2016 11:06:35 +0000</pubDate>
-    <lastBuildDate>Sun, 13 Mar 2016 11:06:35 +0000</lastBuildDate>
+    <pubDate>Mon, 14 Mar 2016 14:31:11 +0000</pubDate>
+    <lastBuildDate>Mon, 14 Mar 2016 14:31:11 +0000</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
-        <title>Test Post</title>
-        <description>&lt;h3 id=&quot;here-is-a-heading&quot;&gt;Here is a heading&lt;/h3&gt;
+        <title>Making this site</title>
+        <description>&lt;h3 id=&quot;first-ever-post&quot;&gt;First ever post…&lt;/h3&gt;
 
-&lt;p&gt;Vestibulum ultrices risus velit, sit amet blandit massa auctor sit amet. Sed eu lectus sem. Phasellus in odio at ipsum porttitor mollis id vel diam. Praesent sit amet posuere risus, eu faucibus lectus. Vivamus ex ligula, tempus pulvinar ipsum in, auctor porta quam. Proin nec dui cursus, posuere dui eget interdum. Fusce lectus magna, sagittis at facilisis vitae, pellentesque at etiam. Quisque posuere leo quis sem commodo, vel scelerisque nisi scelerisque. Suspendisse id quam vel tortor tincidunt suscipit. Nullam auctor orci eu dolor consectetur, interdum ullamcorper ante tincidunt. Mauris felis nec felis elementum varius. Nam sapien ante, varius in pulvinar vitae, rhoncus id massa. Donec varius ex in mauris ornare, eget euismod urna egestas. Etiam lacinia tempor ipsum, sodales porttitor justo. Aliquam dolor quam, semper in tortor eu, volutpat efficitur quam. Fusce nec fermentum nisl. Aenean erat diam, tempus aliquet erat. Etiam iaculis nulla ipsum, et pharetra libero rhoncus ut. Phasellus rutrum cursus velit, eget condimentum nunc blandit vel. In at pulvinar lectus. Morbi diam ante, vulputate et imperdiet eget, fermentum non dolor. Ut eleifend sagittis tincidunt. Sed viverra commodo mi, ac rhoncus justo. Duis neque ligula, elementum ut enim vel, posuere finibus justo. Vivamus facilisis maximus nibh quis pulvinar. Quisque hendrerit in ipsum id tellus facilisis fermentum. Proin mauris dui.&lt;/p&gt;
+&lt;p&gt;So to me it seemed pretty fitting that the very first post on this blog would be
+about the creation of the website it’s on, so lets dive straight in!&lt;/p&gt;
+
+&lt;p&gt;For some time now, I have been an enthusiast about Jekyll. If you’re thinking Mr
+Hyde, then head over to their site and have a quick look. Jekyll is currently
+allowing me to write this post in simple markdown, rather than HTML, which is a 
+lovely benefit, and before I get asked why I’m not using Wordpress, Jekyll
+allows total 100% control over the customization of the site. Yes it’s a little
+harder to get your teeth into. Yes you are not gifted the libraries of widgets
+and extensions as you are in Wordpress, but for me the control makes up for that
+and more. It frustrates me to no end to be developing a site, and for my design
+criteria not to be met, not due to a lack of know-how, but simply because the
+platform makes it exceedingly difficult to undertake certain tasks… &lt;strong&gt;Anyway&lt;/strong&gt;, 
+before I bore you to death, lets get further into the site and the workings of Jekyll.&lt;/p&gt;
+
+&lt;p&gt;Rather than develop my own theme from scratch, I have used the fantastic theme
+designed by HTML5 Up, and am now customizing the CSS, giving me the look and
+feel that is exactly what I want. People might say “you’re a web developer,
+surely your job is to make these themes, why not make your own?”. That’s the
+territory of the web designer, something I touch on, but not something I pride
+myself in. Most of my work is more towards front end applications, building
+sites, maintaining sites etc. And I figured, when there is a great free theme
+out there, very close to what you have in mind, why re-invent the wheel and
+waste time writing it out all from scratch. This also allowed me to get the site
+up and running (albeit with a lack of content), but a reasonable prototype, in
+one night. Not a bad turn around.&lt;/p&gt;
+
+&lt;h3 id=&quot;challenges&quot;&gt;Challenges&lt;/h3&gt;
+
+&lt;p&gt;First are foremost, Jekyll is a blogging platform, and yet the theme I have
+used, didn’t include any blog templates, so that’s where a bit of thinking is
+done. I was able to copy the blog functionality from an older jekyll site I
+maintain, and integrate it - not exactly seamlessly - into this site. The
+problems begin to arise mostly with the classes and CSS. The new theme is using
+certain classes to style everything, with the integrated blog using old classes,
+meaning parts will not match the design of the rest of the site. After scanning
+the CSS file, I was able to re-administer more suitable class names to the
+elements in the blog page, and with a tiny bit more custom CSS, presto, the
+blogging was working.&lt;/p&gt;
+
+&lt;p&gt;But &lt;strong&gt;how&lt;/strong&gt; exactly does the blog work? To answer this, we’ll talk
+a bit more about how Jekyll works. It uses a template engine called &lt;strong&gt;Liquid&lt;/strong&gt;.
+This is where Jekyll really begins coming into its own. Using liquid, we are
+able to render markdown as HTML, include HTML files into others and a whole raft
+of other things we will get into. So, each post I write is a new file that
+belongs in the &lt;code&gt;_posts/&lt;/code&gt; directory, and it must be names in the following
+format: &lt;code&gt;yyyy-mm-dd-some-name.md&lt;/code&gt;. This allows the engine to work out what it is
+and where it should go. Now that we’ve done this, we get into &lt;strong&gt;Liquid&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;At the top of this markdown file, we write:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;---
+layout: blog-post
+title: Blog Post Title
+date: 2016-03-14 13:49:34
+categories: category-of-some-kind
+---&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;The layout is telling Liquid how to present the rest of the page (excluding the
+post content), the title is what will be displayed at the top of the post, and
+the data below that. Then we can add categories for self explanatory reasons.
+What does this mean? So, without writing any HTML, we can start writing our post
+in markdown.&lt;/p&gt;
+
+&lt;p&gt;The layouts reside in a &lt;code&gt;_layouts/&lt;/code&gt; directory, at the same level as &lt;code&gt;_posts/&lt;/code&gt;.
+Inside we can have as many layouts as we want. For example, you could have some
+blog posts that were on the left hand site, with a sidebar on the right, and a
+different layout that had the sidebar on the left and the post content on the
+right.&lt;/p&gt;
+
+&lt;p&gt;We also have an &lt;code&gt;_includes&lt;/code&gt; directory, in which we can have html files that will
+save a &lt;strong&gt;lot&lt;/strong&gt; of time. In here we can have a &lt;code&gt;head.html&lt;/code&gt; file,
+which contains all the links to external CSS/Javascript, meta tags, the lot,
+anything you would put in the head of a standard HTML file. Then, instead of
+having to write it at the top of each page on your site, you can simply include
+it using  &lt;code&gt;{% include head.html %}&lt;/code&gt;  on each layout you want it to be included for
+(which is probably every layout).&lt;/p&gt;
+
+&lt;p&gt;This has already been a pretty long post, so I’ll cut it there for now, but will
+continue my lengthy rants about why I love Jekyll in the near future.&lt;/p&gt;
+
+&lt;p&gt;Keep up to date with tech @ &lt;a href=&quot;https://news.ycombinator.com/&quot;&gt;Hacker News&lt;/a&gt;&lt;/p&gt;
 
 </description>
-        <pubDate>Sun, 13 Mar 2016 23:59:05 +0000</pubDate>
-        <link>http://yourdomain.com/jekyll/update/2016/03/13/test.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2016/03/13/test.html</guid>
+        <pubDate>Mon, 14 Mar 2016 13:49:05 +0000</pubDate>
+        <link>http://yourdomain.com/tech/2016/03/14/making-this-site.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/tech/2016/03/14/making-this-site.html</guid>
         
         
-        <category>jekyll</category>
-        
-        <category>update</category>
-        
-      </item>
-    
-      <item>
-        <title>Test</title>
-        <description>&lt;p&gt;Coming to the end of the project, we have done our presentation, received
-feedback on usability and touched up. We have improved a few things, including
-the bug that was stopping the items from displaying in the inventory correctly.&lt;/p&gt;
-
-&lt;h1 id=&quot;individual-feature&quot;&gt;Individual Feature&lt;/h1&gt;
-
-&lt;p&gt;I have added an extra feature that tracks all the robots movements, displays on
-the map where it has been, and calculates what percentage of the map has been
-covered.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/cxH6P2q.png&quot; alt=&quot;Traced-map&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;In order to calculate the percentage of the map covered, I wrote the following
-function:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;calculate_percentage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;covered&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;totalW&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;totalH&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-    &lt;span class=&quot;sd&quot;&gt;&amp;#39;&amp;#39;&amp;#39;Function calculate how much of map is visited&lt;/span&gt;
-&lt;span class=&quot;sd&quot;&gt;    Takes 2 lists and compares to see how much of the ground has been visited&amp;#39;&amp;#39;&amp;#39;&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;uniqueTiles&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;totalW&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;j&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;totalH&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-            &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;covered&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-                &lt;span class=&quot;n&quot;&gt;uniqueTiles&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;uniqueTiles&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;totalW&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;totalH&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;evaluation-of-the-project&quot;&gt;Evaluation of the project&lt;/h3&gt;
-
-&lt;p&gt;Overall I think the project has been mixed with regards to it’s success, there
-are some things I feel have worked very well, and other aspects that can without
-doubt be chalked down to experience.&lt;/p&gt;
-
-&lt;p&gt;The first successful area of this project has been its management, and use of
-software to keep everybody up to date with progress.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://quickfixes.github.io/just-gittin-started/img/octocat.png&quot; alt=&quot;Github octocat&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The place to begin is with the most important management tool of the lot - GitHub.
-It has been vital for the progress and success of this project, that we successfully 
-used a version control system. GitHub has been magnificent, and although confusing for
-some members of the team who had never used it before, proved invaluable right the way
-to the end. We were able to commit code, revert to earlier builds, use branches for individual
-features, raise issues, assign tasks, view each others work, and integrate other software.&lt;/p&gt;
-
-&lt;p&gt;Other such software included Travis CI.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://workablehr.s3.amazonaws.com/uploads/account/logo/11901/large_Mascot-fullcolor-png.png&quot; alt=&quot;Travis CI logo&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Although for this project, it was largely irrelevant, Travis was a really cool
-service to successfully employ, more as an investment for future projects. With
-Travis CI, I was able to write unit tests that could test functions, and every
-time any code was commited, it would run the tests to make sure the functions
-were still being run correctly, if not, it would fail the build, alert me via
-email, and change the badge on the repository readme to ‘build: failing’.&lt;/p&gt;
-
-&lt;p&gt;Lastly, I feel the presentation was done well, and possibly the first time the
-group really pulled together a bit more. I think future projects will require
-far more communication, better delegation of work to individuals, and a more in
-depth analysis at the start, with a stronger focus on design. As a process, it
-has been fantastic, and very, very rewarding, seeing a project come from pen and
-paper, to a real product. And that’s it from me for this project.&lt;/p&gt;
-
-&lt;p&gt;Follow me on Twitter and GitHub to keep up to date with my work, and to see more
-blogs on future projects.&lt;/p&gt;
-
-</description>
-        <pubDate>Thu, 10 Mar 2016 23:13:05 +0000</pubDate>
-        <link>http://yourdomain.com/jekyll/update/2016/03/10/rounding-off.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2016/03/10/rounding-off.html</guid>
-        
-        
-        <category>jekyll</category>
-        
-        <category>update</category>
+        <category>tech</category>
         
       </item>
     
