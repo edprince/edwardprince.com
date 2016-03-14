@@ -2066,7 +2066,7 @@ button,
   .wrapper.style2 {
     background-color: #2e3842; }
   .wrapper.style3 {
-    background-color: #505393;
+    background-color: #3498bd;
     color: #d3d4e4; }
     .wrapper.style3 strong, .wrapper.style3 b {
       color: #ffffff; }
@@ -2103,7 +2103,7 @@ button,
     .wrapper.style3 input[type="checkbox"]:checked + label:before,
     .wrapper.style3 input[type="radio"]:checked + label:before {
       background: #ffffff;
-      color: #505393; }
+      color: #3498bd; }
     .wrapper.style3 ::-webkit-input-placeholder {
       color: #b9bad4 !important; }
     .wrapper.style3 :-moz-placeholder {
