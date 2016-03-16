@@ -2,10 +2,10 @@
 layout: post
 title:  "Jekyll continued"
 date:   2016-03-18 09:59:05
-categories: jekyll update
+categories: tech
 ---
 
-## Carrying on with Jekyll
+### Carrying on with Jekyll
 
 This post is going to continue where I left off from my previous post, about
 Jekyll. So we now know how to include html in other html files using Liquid.
