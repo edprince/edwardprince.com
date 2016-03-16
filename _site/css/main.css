@@ -1122,8 +1122,8 @@ body {
   color: #666f77;
   margin-bottom: 2em; }
 
-.link {
-  border-bottom: dotted 1px grey; }
+.major a {
+  border-bottom: none; }
 
 /*
 .style_post .actions {
@@ -1171,6 +1171,7 @@ a {
   -webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
   -ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
   transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  border-bottom: dotted 1px;
   color: inherit;
   text-decoration: none; }
   a:hover {
