@@ -6,9 +6,122 @@
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 16 Mar 2016 14:28:47 +0000</pubDate>
-    <lastBuildDate>Wed, 16 Mar 2016 14:28:47 +0000</lastBuildDate>
+    <pubDate>Wed, 16 Mar 2016 14:31:58 +0000</pubDate>
+    <lastBuildDate>Wed, 16 Mar 2016 14:31:58 +0000</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Jekyll continued</title>
+        <description>&lt;h2 id=&quot;carrying-on-with-jekyll&quot;&gt;Carrying on with Jekyll&lt;/h2&gt;
+
+&lt;p&gt;This post is going to continue where I left off from my previous post, about
+Jekyll. So we now know how to include html in other html files using Liquid.
+So, now think of the html that is needed to be included. We are talking about
+HTML that will be required in every page. So, there will almost always be the
+&lt;code&gt;head.html&lt;/code&gt; file, containing links to external CSS, and meta tags. Sometimes
+they will also include links to the JavaScript files, but better practice is to
+add those further down the file. Why? Say we have a huge JS file, and several
+libraries that need to be loaded, a device on a slow network may take a long
+time to load that page. If the JavaScript is being loaded at the top of the
+page, then the rest of the HTML will only be displayed once they have been fully
+loaded. The alternative is to link the JS further down the page. What this
+allows is for the HTML to load up, giving the user something to look at - some
+sort of feedback much more quickly, before the JavaScript fills in when it is
+ready.&lt;/p&gt;
+
+&lt;p&gt;So, alongside the &lt;code&gt;head.html&lt;/code&gt;, there will likely be some sort of navigation on
+each page, often stored in another file called &lt;code&gt;header.html&lt;/code&gt;. Finally, the other
+default file in there will usually be &lt;code&gt;footer.html&lt;/code&gt;, containing the HTML for the
+footer that will be displayed on every page. I am saying ‘usually’, because if
+you use other people’s themes, there is nothing to stop them removing these
+files and adding different ones instead, so it might not always be true, but it
+will if you use the default Jekyll theme.&lt;/p&gt;
+
+&lt;p&gt;The files in the &lt;code&gt;_layouts&lt;/code&gt; directory will include these files in the layouts
+that are appropriate, again, likely to be all of them.&lt;/p&gt;
+
+&lt;h3 id=&quot;creating-a-new-page-for-the-site&quot;&gt;Creating a new page for the site&lt;/h3&gt;
+
+&lt;p&gt;To create a new page for the site, you simply need to add a new &lt;code&gt;something.html&lt;/code&gt;
+in the root of the project. I tend to copy one of the existing pages to do this,
+but it’s not a lot to do from scratch. You just need to use the liquid format to
+choose a layout for the page. I like to add a title as well. This would look
+like this:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;---
+layout: page
+title: My Title
+---&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Now you can just add any HTML you like for this new page. Chances are, that’s
+all you have to do, the theme will probably now add this automatically to the
+navigation menu, as it loops over all the html files in the root of the
+directory and adds links to the navigation menu.&lt;/p&gt;
+
+&lt;h3 id=&quot;configyml&quot;&gt;_config.yml&lt;/h3&gt;
+
+&lt;p&gt;By now you may have noticed the file called &lt;code&gt;_config.yml&lt;/code&gt;. This is a very
+important configuration file with which you should definitely become familiar.
+Fortunately it’s pretty self explanatory. In here, there is data such as the
+site title, a site description, links to social media accounts. Again it will
+vary depending on which theme you have. Fill this data out as accurately as
+possible.&lt;/p&gt;
+
+&lt;h2 id=&quot;some-jekyll-dos-and-donts&quot;&gt;Some Jekyll do’s and dont’s&lt;/h2&gt;
+
+&lt;h1 id=&quot;donts&quot;&gt;Dont’s&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;In the root of the project, there is a directory called &lt;code&gt;_site&lt;/code&gt;. This has the
+build of the site in, all the HTML after it’s been built by Liquid. &lt;strong&gt;don’t&lt;/strong&gt;
+edit the files inside this folder. It’s not dangerous, just a waste of time.
+It can be tempting to try and force the title of a page to change by changing
+it in that directory, but every time you run &lt;code&gt;jekyll serve&lt;/code&gt;, it will
+overwrite everything in that directory with a new build, changing anything
+you modified.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Don’t&lt;/strong&gt; be disheartened if it’s confusing to begin with, it’s bound to be,
+invest some time into learning it, it’s worth it!&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;dos&quot;&gt;Do’s&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Experiment with the default theme to begin with, get and idea for how Jekyll
+works at it’s simplest, understand the file system, and then start using
+themes.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Try creating your own theme, it’s great downloading pre-built themes and
+using theme, but try building one yourself at some point, it’s sure to make
+you understand how Jekyll works.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Become familiar with SCSS. Many Jekyll themes make use of SCSS, and if you
+want to customize anything, then you will probably want to understand the
+basics of SCSS. It’s not essential, you can add CSS to a SCSS file, but it
+makes it easier to have a basic knowledge.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Give it time and patience, and have fun!&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Fri, 18 Mar 2016 09:59:05 +0000</pubDate>
+        <link>http://yourdomain.com/jekyll/update/2016/03/18/test.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2016/03/18/test.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
     
       <item>
         <title>Jekyll continued</title>
