@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Jekyll continued"
-date:   2016-03-18 09:59:05
+date:   2016-03-15 09:59:05
 categories: tech
 ---
 
