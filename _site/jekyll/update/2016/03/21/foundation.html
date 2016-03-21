@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<!--
+  Original Design: Spectral by HTML5 UP
+    html5up.net | @n33co
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+  Jekyll build mod
+-->
+<html>
+
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Foundation</title>
+  <meta name="description" content="What is Foundation?">
+  <!--[if lte IE 8]><script src="/js/ie/html5shiv.js"></script><![endif]-->
+  <link rel="canonical" href="http://yourdomain.com/jekyll/update/2016/03/21/foundation.html">
+  <link rel="stylesheet" href="/css/main.css" />
+  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" type="text/css" />
+  <!--[if lte IE 8]><link rel="stylesheet" href="/css/ie8.css" /><![endif]-->
+  <!--[if lte IE 9]><link rel="stylesheet" href="/css/ie9.css" /><![endif]-->
+  <link rel="alternate" type="application/rss+xml" title="Ed Prince" href="http://yourdomain.com/feed.xml">
+</head>
+
+
+  <body>
+
+    <!-- Page Wrapper -->
+    <div id="page-wrapper">
+
+      <!-- Header -->
+<header id="header">
+  <h1><a href="/index.html">Ed Prince</a></h1>
+  <nav id="nav">
+    <ul>
+      <li class="special">
+        <a href="#menu" class="menuToggle"><span>Menu</span></a>
+        <div id="menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            
+            
+            <li><a href="/blog.html">Blog</a></li>
+            
+            
+            
+            <li><a href="/contact.html">Contact</a></li>
+            
+            
+            
+            <li><a href="/elements.html">Elements</a></li>
+            
+            
+            
+            
+            
+            <li><a href="/generic.html">Generic</a></li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li><a href="/portfolio.html">Portfolio</a></li>
+            
+            
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+
+      <div class="wrapper .post_content style_post">
+    <article class="container">
+        <header class="major">
+            <h2 class="post-title">Foundation</h2>
+                <p class="post-meta">Mar 21, 2016</p>
+            <hr />
+        </header>
+
+        <section class="post-content wrapper">
+          <div class='inner'>
+            <h1 id="what-is-foundation">What is Foundation?</h1>
+
+<p><img src="http://antrecu.com/sites/default/files/foundation_logo.png" alt="Foundation logo" /></p>
+
+<p>You’re designing a web-page, and you need to have 3 images horizontally across
+the screen, with some text underneath. You might quite rightly think that this
+could be achieved using a table, styling it so it has no border colours, or
+using floats. Then you also want to make it responsive for mobile devices. No
+problem, you can just include a media query in your CSS and change the way it’s
+structured to show only one picture at a time on a mobile device.</p>
+
+<p>Except there is a problem. You have created a lot of work for yourself. This is
+where Foundation comes in. One of the most popular features of Foundation is the
+grid system. Was this their idea? Nope, Bootstrap did it before, and probably a
+whole load of other devs, but Foundation do it really well.</p>
+
+<p>The grid system works in a relatively simple way. If you give a <code>&lt;div&gt;</code> the
+class: <code>row</code>, then you can think of the div on the next level in, as a row,
+split into 12 columns. Now, you can create more divs in this row that define how
+many of these 12 columns it takes up. If we think about our example from before,
+if you want 3 images horizontally, we need to think about how to divide our 12
+columns equally into 3 parts. 12 / 3 = 4. Our divs need to be 4 columns wide.</p>
+
+<p>To achieve this we would add the following class to a div that is a first-level
+child of our <code>row</code> div: <code>medium-4 columns</code>. Now copy this div and add two more,
+with their respective images, and you have the 3 horizontally aligned images.</p>
+
+<p>But didn’t I say something about scaling to mobile? You can decide how many
+columns each div should take up according to different screen sizes. The
+following class would on a large screen, display the 3 images side by side,
+and on small or medium screens, show them vertically aligned: <code>small-12
+medium-12 large-4 columns</code>. That’s the basics of the grid system.</p>
+
+<h1 id="is-that-it">Is that it?</h1>
+
+<p>Nope, Foundation doesn’t stop here, there is also a lot of extra stuff it
+styles. Unless you override, it styles your buttons and input boxes etc., but
+personally, I like to change some of this anyway.</p>
+
+<p>Fortunately, Foundation has a nice option to only download the “Essentials”
+package, which doesn’t include a lot of these extra features. If that wasn’t
+enough, you can also build a custom download, selecting modules to include,
+giving you full control of everything being downloaded.</p>
+
+<h1 id="where-do-i-get-it">Where do I get it?</h1>
+
+<p>Head over to <a href="http://foundation.zurb.com/">Foundation Zurb</a>. Here you can choose
+to either download to your machine, or get a link. It’s worth using the <em>cdn</em>
+link:</p>
+
+<p><code>https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.0/foundation-flex.css</code></p>
+
+<p>or the minified version:</p>
+
+<p><code>https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.0/foundation-flex.min.css</code></p>
+
+<p>The advantage of the cdn link is that when a user attempts to load
+the content from the link destination, it picks a distribution point that is
+geographically closest to their computer, allowing for the fastest load time
+possible.</p>
+
+<p>If you choose this method though, you are not allowing yourself to use a custom
+build of foundation.</p>
+
+
+          </div>
+        </section>
+        
+        <footer>
+          <!--
+          
+            <a href="/tech/2016/03/15/jekyll-continued.html" class="float-left">&larr; Previous post</a> 
+            
+            -->
+            <a class='button alt_button' href='/blog.html' style='text-align:center'>Back to menu</a>
+        </footer>
+
+    </article>
+
+</div>
+
+
+      <!-- Footer -->
+<footer id="footer">
+  <ul class="icons">
+    
+    
+    
+    <li><a target="_blank" href="https://twitter.com/ed_prince1" class="icon fa-twitter"
+           ><span class="label">twitter</span></a></li>
+    
+    
+    
+    
+    
+    <li><a target="_blank" href="https://github.com/edprince" class="icon fa-github"
+           ><span class="label">github</span></a></li>
+    
+    
+    
+  </ul>
+  <ul class="copyright">
+    <li>&copy; 
+    
+      
+      
+    
+    2016
+    Ed Prince</li>
+    <li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+    <li>Built with: <a href="http://jekyllrb.com" target="_blank">Jekyll</a></li>
+  </ul>
+</footer>
+
+
+      <!-- Scripts -->
+<script src="/js/jquery.min.js"></script>
+<script src="/js/jquery.scrollex.min.js"></script>
+<script src="/js/jquery.scrolly.min.js"></script>
+<script src="/js/skel.min.js"></script>
+<script src="/js/util.js"></script>
+<!--[if lte IE 8]><script src="js/ie/respond.min.js"></script><![endif]-->
+<script src="/js/main.js"></script>
+
+
+    </div>
+
+  </body>
+
+</html>
