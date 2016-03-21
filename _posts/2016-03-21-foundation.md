@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Foundation"
-date:   2016-03-21 23:59:05
+date: 2016-03-21 23:59:05
 categories: jekyll update
 ---
 
