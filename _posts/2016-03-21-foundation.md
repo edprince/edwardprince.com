@@ -1,11 +1,9 @@
 ---
 layout: post
 title:  "Foundation"
-date: 2016-03-21 23:59:05
-categories: jekyll update
+date: 2016-03-22 23:59:05
+categories: tech
 ---
-
-
 # What is Foundation?
 
 ![Foundation logo](http://antrecu.com/sites/default/files/foundation_logo.png)

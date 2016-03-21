@@ -6,8 +6,8 @@
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 21 Mar 2016 00:55:20 +0000</pubDate>
-    <lastBuildDate>Mon, 21 Mar 2016 00:55:20 +0000</lastBuildDate>
+    <pubDate>Mon, 21 Mar 2016 00:58:48 +0000</pubDate>
+    <lastBuildDate>Mon, 21 Mar 2016 00:58:48 +0000</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -77,14 +77,12 @@ possible.&lt;/p&gt;
 build of foundation.&lt;/p&gt;
 
 </description>
-        <pubDate>Mon, 21 Mar 2016 23:59:05 +0000</pubDate>
-        <link>http://yourdomain.com/jekyll/update/2016/03/21/foundation.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2016/03/21/foundation.html</guid>
+        <pubDate>Tue, 22 Mar 2016 23:59:05 +0000</pubDate>
+        <link>http://yourdomain.com/tech/2016/03/22/foundation.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/tech/2016/03/22/foundation.html</guid>
         
         
-        <category>jekyll</category>
-        
-        <category>update</category>
+        <category>tech</category>
         
       </item>
     
