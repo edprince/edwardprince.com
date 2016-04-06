@@ -60,6 +60,10 @@ $baseurl: '{{ site.baseurl }}/images';
   text-align: left;
 }
 
+.post-content img {
+  max-width: 100%;
+}
+
 .post-content .style1, .post-content .style2 {
   padding-top: 4em;
   padding-bottom: 4em;
