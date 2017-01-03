@@ -7,3 +7,11 @@ title: Elements
         <h3>Photos taken with Nexus 5 and edited with Snapseed</h3>
         <div id='instafeed'></div>
       </section>
+      <script type='text/javascript'>
+        var feed = new Instafeed({
+            get: 'tagged',
+            tagName: 'nexus',
+            clientId: 'b1d715fe275a44aca3f2fa44eb61949f'
+            })
+        feed.run();
+      </script>
