@@ -98,3 +98,10 @@
 	});
 
 })(jQuery);
+
+var feed = new Instafeed({
+  get: 'tagged',
+  tagName: 'nexus',
+  clientId: ' b1d715fe275a44aca3f2fa44eb61949f'
+});
+feed.run()
