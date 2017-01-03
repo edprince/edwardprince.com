@@ -91,6 +91,16 @@ $baseurl: '{{ site.baseurl }}/images';
   border-bottom: none;
 }
 
+#instafeed img {
+  width: 300px;
+}
+
+#instafeed {
+  text-align: center;
+  margin-left: .5em;
+  margin-right: .5em;
+}
+
 /*
 .style_post .actions {
   margin: 0;
