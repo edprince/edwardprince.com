@@ -1,31 +1,22 @@
 ---
-layout: landing
+layout: default
 title: Blog
-description: Keep up to date with what I am up to and what I am thinking
+weight: 3
 ---
 
-<!-- Banner -->
-<section id='banner'>
-  <div class='inner'>
-    <h2>{{ page.title }}</h2>
-    <p>{{ page.description }}</h2>
-  </div>
-  <a href='#main' class='more scrolly'>Read On</a>
-</section>
-<section id="main" class="style_post wrapper style1">
+<div class="home">
+
+  <h1 class="page-heading">Posts</h1>
+
+  <ul class="post-list">
     {% for post in site.posts %}
-        <div class="wrapper {% cycle 'style1', 'style2' %}">
-            <header class="major inner">
-                <h2 class='white'><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-            </header>
-            <section class="container inner">
-                {{ post.excerpt }}
-            </section>
-            <section class="special">
-                <ul class="actions">
-                    <li><a href="{{ site.baseurl }}{{ post.url }}" class="button white {% cycle '', 'alt'%}">Read More</a></li>
-                </ul>
-            </section>
-        </div>
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
     {% endfor %}
-</section>
+  </ul>
+</div>

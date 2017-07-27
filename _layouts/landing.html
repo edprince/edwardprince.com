@@ -1,27 +1,25 @@
-<!DOCTYPE html>
-<!--
-  Original Design: Spectral by HTML5 UP
-    html5up.net | @n33co
-    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-  Jekyll build mod
--->
+<DOCTYPE html>
 <html>
 
-  {% include head.html %} 
-  <body class="landing">
+  {% include head.html %}
 
-    <!-- Page Wrapper -->
-    <div id="page-wrapper">
+  <body>
 
-      {% include header.html %}
+    {% include header.html %}
 
-      {{ content }}
-
-      {% include footer.html %}
-
-      {% include scripts.html %}
-
+    <div class="page-banner">
+      <div class='vertical-align'>
+        <h1>Ed Prince</h1>
+        <h2 class="subtitle">Mountaineer & Web Developer
+      </div>
     </div>
+    <div class="page-content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </div>
+
+    {% include footer.html %}
 
   </body>
 
