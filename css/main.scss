@@ -69,3 +69,12 @@ body {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
+
+.round {
+  border-radius: 50%;
+}
+
+.center {
+  display: block;
+  margin: 0 auto;
+}

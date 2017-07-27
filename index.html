@@ -6,5 +6,20 @@ weight: 1
 
 <div class="home">
   <!--<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>-->
+  <h1>A bit about me</h1>
+  <p>When I'm not developing for UKClimbing, I'll often be found somewhere up a mountain,
+  or playing the guitar or piano. Here's some more text just to fill this space up a bit.
+  There will definitely be proper content here in the future though.</p>
 
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
 </div>
