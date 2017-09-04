@@ -6,10 +6,10 @@ weight: 3
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <h2>Posts</h2>
 
   <ul class="post-list">
-    {% for post in site.posts %}
+    {% for post in site.categories.climbing %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
@@ -20,4 +20,17 @@ weight: 3
       </li>
     {% endfor %}
   </ul>
+  <div class='light-grey'>
+    <h2>Books</h2>
+    <ul class='post-list horizontal-list'>
+      {% for post in site.categories.book %}
+        <li>
+          <h2>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h2>
+          {{ post.excerpt }}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
 </div>
