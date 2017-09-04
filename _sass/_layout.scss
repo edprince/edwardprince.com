@@ -100,6 +100,7 @@
 .site-footer {
     border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
+    background: $grey-color-light;
 }
 
 .footer-heading {
@@ -215,6 +216,7 @@
 
 .post-content {
     margin-bottom: $spacing-unit;
+    text-align: justify;
 
     h2 {
         font-size: 32px;

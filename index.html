@@ -6,11 +6,8 @@ weight: 1
 
 <div class="home">
   <!--<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>-->
-  <h1>A bit about me</h1>
-  <p>When I'm not developing for UKClimbing, I'll often be found somewhere up a mountain,
-  or playing the guitar or piano. Here's some more text just to fill this space up a bit.
-  There will definitely be proper content here in the future though.</p>
 
+  <!--
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
@@ -19,7 +16,23 @@ weight: 1
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
+          {{ post.excerpt }}
       </li>
     {% endfor %}
   </ul>
+  -->
+
+
+
+  <div class='page-content'>
+    <h2>Featured Book</h2>
+    <ul>
+      {% for post in site.categories.book %}
+        {% if post.url %}
+          {{ post.content | truncatewords: 50 }}
+          <a href="{{ post.url | prepend: site.baseurl }}">Read more</a>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
 </div>

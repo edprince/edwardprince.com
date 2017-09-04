@@ -1,4 +1,4 @@
-/**
+/*
  * Reset some basic elements
  */
 body, h1, h2, h3, h4, h5, h6,
@@ -11,7 +11,7 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font: 400 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 400 16px/1.8 "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #111;
   background-color: #fdfdfd;
   -webkit-text-size-adjust: 100%;
@@ -60,7 +60,13 @@ li > ol {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 400; }
+  font-weight: 900; }
+
+.page-content p, .post-content p, .page-content a, .post-content a {
+  font-family: "Crimson Text", serif; }
+
+.page-content, .post-content {
+  font-size: 20px; }
 
 /**
  * Links
@@ -211,7 +217,8 @@ pre {
  */
 .site-footer {
   border-top: 1px solid #e8e8e8;
-  padding: 30px 0; }
+  padding: 30px 0;
+  background: #e8e8e8; }
 
 .footer-heading {
   font-size: 18px;
@@ -296,7 +303,8 @@ pre {
       font-size: 36px; } }
 
 .post-content {
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  text-align: justify; }
   .post-content h2 {
     font-size: 32px; }
     @media screen and (max-width: 800px) {
@@ -463,7 +471,8 @@ body {
   text-align: center;
   color: white;
   height: 100vh;
-  padding-top: 2em; }
+  padding-top: 2em;
+  background-attachment: fixed; }
 
 .vertical-align {
   position: relative;
@@ -478,3 +487,20 @@ body {
 .center {
   display: block;
   margin: 0 auto; }
+
+img {
+  display: block;
+  margin: 0 auto; }
+
+.padded {
+  padding: 2em;
+  height: 50vh; }
+
+.center-text {
+  text-align: center; }
+
+.narrow {
+  width: 40%; }
+
+.bg-lightgrey {
+  background: #efefef; }

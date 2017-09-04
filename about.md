@@ -6,12 +6,22 @@ permalink: /about/
 ---
 
 I try to balance my life between enjoying technology,
-and finding deep satisfaction in the outdoors.
+and finding deep satisfaction in the outdoors. Growing
+up in the Lake District, you can imagine the surprise
+to my parents when I showed no interest in the outdoors
+whatsoever when I was younger, and it took moving to
+Coventry to attend the University to realise I enjoyed
+the gorgeous landscape of the Lakes. I decided the
+easiest way to return to similar places was to join
+the Mountaineering Society, and so began my journey
+into climbing.
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jglovier" %} /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
+Within 7 months, I was elected President of the society,
+undertook Mountain Leader training, went on an Alpine
+Mountaineering course in Chamonix, and spent that summer
+in Ailefroide and the Dolomites. 
 
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+<img class='round' src="/images/profile.jpg" alt="Ed Prince" style="width: 250px;"/>
+
+
+
