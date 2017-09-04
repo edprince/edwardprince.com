@@ -87,7 +87,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-.page-content p, .post-content p, .page-content a, .post-content a {
+.page-content *, .post-content * {
   font-family: $paragraph-font-family;
   //font-size: 1.3em;
 }
