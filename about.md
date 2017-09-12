@@ -25,7 +25,7 @@ in Ailefroide and the Dolomites.
 
  * Flying Buttress (Dinas Cromlech) - Cold and wet in January.
  * Aiguille du Tour - First Alpine summit.
- * The Gambit, North Wales - First Severe multipitch.
+ * Gambit Climb, North Wales - First Severe multipitch.
  * Cosmique's Arete - Just after a two day storm, leaving the route
  covered in snow, crux crack ended up being one of the simpler bits
  of climbing.
