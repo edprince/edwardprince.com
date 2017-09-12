@@ -22,6 +22,7 @@ $brand-color:      #2a7ae2;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%); $grey-color-dark:  darken($grey-color, 25%); // Width of the content area
+$dominant-color: #6194DF;
 $content-width:    800px;
 
 $on-palm:          600px;
@@ -108,4 +109,30 @@ img {
   display: inline-block;
   margin-left: 1em;
   margin-right: 1em;
+}
+
+form input, form textarea {
+  background: #efefef;
+  border: 0;
+  padding: .5em;
+  margin-bottom: 1em;
+  font-size: 20px;
+  display: block;
+}
+
+.fullwidth {
+  width: 100%;
+  max-width: 100%;
+}
+
+.dominant {
+  background: $dominant-color;
+  color: white;
+}
+
+.button {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  border-radius: 5px;
+  cursor: pointer;
 }
