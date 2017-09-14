@@ -49,6 +49,9 @@ approach, a dramatic, yet not technically difficult, exposed ascent, and a grand
 station platform - greeted with applause, photos and very excited tourists. Nearly as excited as us to
 be there!
 
+![Cosmiques Arete as seen from the Midi station](/images/alps-2017/cosmiques2.jpg)
+*A shot from an enthusiastic tourist up at the Midi station as she saw us emerge on the Arete*
+
 ## Dent du Geant
 
 Way back in January 2016, a friend of mine approached me and a friend with the idea of climbing a huge
