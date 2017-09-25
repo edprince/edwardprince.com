@@ -25,17 +25,17 @@ about Krakauer's life, I think to enforce how similar he was to McCandless in ma
 ways. He openly documents that this leads to a certain level of bias towards the
 decisions McCandless made, even when they lead to such pain for his family.
 
-He also utilises his normal technique (also seen in Into Thin Air), of introducing 
-each chapter with a short text, quoting someone/something else - however this 
-time he paints a greater abstracted picture of McCandless mind, by including
+Krakauer uses a technique (also seen in Into Thin Air) of introducing 
+each chapter with a short quotation, featuring a relevant text; this 
+time using it to form a greater abstracted picture of McCandless mind. He includes
 passages from the books that McCandless carried with him into the wilds of
 Alaska, emphasizing their importance to him, along with stating they were by far
 the heaviest things within his pack. Perhaps they give a person more understanding
 of his mind that he could have done with his various notes.
 
 If you've never read any work written by Jon Krakauer, Into the Wild is a
-great book to start with. An easy writing style, compelling story, researched, 
-understook, and fabulously written by a competent adventurer leaving you
+great book with which to start. An easy writing style, compelling story, researched, 
+understood, and fabulously written by a competent adventurer leaving you
 wanting to continue reading long after you finish the book.
 
 
