@@ -43,6 +43,24 @@ $on-laptop:        800px;
     }
 }
 
+@include media-query($on-palm) {
+  .narrow {
+    width: 90%;
+  }
+}
+
+@media (max-width: 640px) {
+  .narrow {
+    width: 90%;
+  }
+}
+
+@media (min-width: 641px) {
+  .narrow {
+    width: 40%;
+  }
+}
+
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
@@ -58,13 +76,20 @@ body {
 }
 
 .page-banner {
-  background-image: url('../images/banner.jpg');
   background-size: cover;
   text-align: center;
   color: white;
   height: 100vh;
   padding-top: 2em;
   background-attachment: fixed;
+}
+
+#banner1 {
+  background-image: url('../images/banner.jpg');
+}
+
+#banner2 {
+  background-image: url('../images/thailand.jpg');
 }
 
 .vertical-align {
@@ -96,10 +121,6 @@ img {
 
 .center-text {
   text-align: center;
-}
-
-.narrow {
-  width: 40%;
 }
 
 .bg-lightgrey {
