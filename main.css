@@ -30,6 +30,13 @@ a {
     font-weight: 700;
 }
 
+iframe {
+  display: block !important;
+  margin: 0 auto !important;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
 .left {
     border-right: solid 3px #16a085;
 }
