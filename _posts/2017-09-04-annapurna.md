@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Annapurna South Face"
-date:   
+date: 2032-07-27 18:00:00 
 categories: book
 ---
 <img class='left-align' src='/images/books/annapurna.jpg' width='200' />
