@@ -2,7 +2,7 @@
 layout: post
 title:  "Alpine Adventures"
 date:   2017-07-26 16:00:02 +0100
-categories: climbing
+categories: climbing primary
 ---
 
 ![Group photo on the Grand Montets Ridge](/images/alps-2017/group.jpg)

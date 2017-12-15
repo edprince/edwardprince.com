@@ -1,3 +1,12 @@
+@media screen and (max-width: 600px) {
+  .narrow {
+    width: 90%; } }
+@media (max-width: 640px) {
+  .narrow {
+    width: 90%; } }
+@media (min-width: 641px) {
+  .narrow {
+    width: 40%; } }
 /*
  * Reset some basic elements
  */
@@ -467,12 +476,18 @@ body {
   overflow-y: scroll; }
 
 .page-banner {
-  background-image: url("../images/banner2.jpg");
+  background-size: cover;
   text-align: center;
   color: white;
   height: 100vh;
   padding-top: 2em;
   background-attachment: fixed; }
+
+#banner1 {
+  background-image: url("../images/banner.jpg"); }
+
+#banner2 {
+  background-image: url("../images/roche.jpg"); }
 
 .vertical-align {
   position: relative;
@@ -499,8 +514,45 @@ img {
 .center-text {
   text-align: center; }
 
-.narrow {
-  width: 40%; }
-
 .bg-lightgrey {
   background: #efefef; }
+
+.horizontal-list li {
+  display: inline-block;
+  margin-left: 1em;
+  margin-right: 1em; }
+
+form input, form textarea {
+  background: #efefef;
+  border: 0;
+  padding: .5em;
+  margin-bottom: 1em;
+  font-size: 20px;
+  display: block; }
+
+.fullwidth {
+  width: 100%;
+  max-width: 100%; }
+
+.dominant {
+  background: #6194DF;
+  color: white; }
+
+.button {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  border-radius: 5px;
+  cursor: pointer; }
+
+iframe {
+  display: block;
+  margin: 0 auto;
+  margin-top: 1em;
+  margin-bottom: 1em; }
+
+#map {
+  height: 400px; }
+
+.left-align {
+  margin-left: 0;
+  text-align: left; }

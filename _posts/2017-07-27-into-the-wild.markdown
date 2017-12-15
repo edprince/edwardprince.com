@@ -4,7 +4,7 @@ title:  "Into the Wild"
 date:   2017-07-27 18:00:02 +0100
 categories: book
 ---
-<img src='/images/books/into_the_wild.jpg' width='200' />
+<img class='left-align' src='/images/books/into_the_wild.jpg' width='200' />
 
 *By Jon Krakauer*
 
