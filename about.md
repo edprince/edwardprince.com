@@ -5,7 +5,7 @@ weight: 2
 permalink: /about/
 ---
 
-I try to balance my life between enjoying technology,
+I balance my life between enjoying technology,
 and finding deep satisfaction in the outdoors. Growing
 up in the Lake District, you can imagine the surprise
 to my parents when I showed no interest in the outdoors
