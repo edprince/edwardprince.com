@@ -15,6 +15,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://edwardprince.com" # the base hostname & protocol for your site
 twitter_username: ed_prince1
 github_username:  edprince
+exclude: [node_modules]
 
 # Build settings
 markdown: kramdown
