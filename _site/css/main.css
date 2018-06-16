@@ -71,9 +71,6 @@ li > ol {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 900; }
 
-.page-content *, .post-content * {
-  font-family: "Crimson Text", serif; }
-
 .page-content, .post-content {
   font-size: 20px; }
 
@@ -123,6 +120,15 @@ pre {
     padding-right: 0;
     padding-left: 0; }
 
+button {
+  padding: 1em 1.8em 1em 1.8em;
+  border: none;
+  background: #424242;
+  color: #fafafa;
+  min-width: 120px;
+  border-radius: 5px;
+  cursor: pointer; }
+
 /**
  * Wrapper
  */
@@ -165,7 +171,10 @@ pre {
 .site-header {
   border-bottom: 1px solid #e8e8e8;
   min-height: 56px;
-  position: relative; }
+  position: fixed;
+  width: 100%;
+  background: white;
+  z-index: 100; }
 
 .site-title {
   font-size: 26px;
@@ -210,7 +219,8 @@ pre {
             fill: #424242; }
       .site-nav .trigger {
         clear: both;
-        display: none; }
+        display: none;
+        z-index: 10; }
       .site-nav:hover .trigger {
         display: block;
         padding-bottom: 5px; }
@@ -329,6 +339,18 @@ pre {
     @media screen and (max-width: 800px) {
       .post-content h4 {
         font-size: 18px; } }
+
+.icon-large {
+  font-size: 1.2em; }
+
+button i {
+  margin-right: 10px; }
+
+.card {
+  margin: 0 10px 0 10px;
+  background: white;
+  padding: 1em;
+  box-sizing: border-box; }
 
 /**
  * Syntax highlighting styles
@@ -484,7 +506,8 @@ body {
   background-attachment: fixed; }
 
 #banner1 {
-  background-image: url("../images/banner.jpg"); }
+  background: #4db6ac;
+  font-size: 2.5em; }
 
 #banner2 {
   background-image: url("../images/roche.jpg"); }
@@ -538,6 +561,9 @@ form input, form textarea {
   background: #6194DF;
   color: white; }
 
+.light {
+  color: #fafafa; }
+
 .button {
   padding-left: 1.5em;
   padding-right: 1.5em;
@@ -556,3 +582,12 @@ iframe {
 .left-align {
   margin-left: 0;
   text-align: left; }
+
+.site-nav {
+  font-weight: bold; }
+
+.top-color1 {
+  border-top: solid 5px #4db6ac; }
+
+.top-color2 {
+  border-top: solid 5px #d66969; }

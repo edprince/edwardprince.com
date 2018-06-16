@@ -88,7 +88,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .page-content *, .post-content * {
-  font-family: $paragraph-font-family;
+  //font-family: $paragraph-font-family;
   //font-size: 1.3em;
 }
 
@@ -159,6 +159,17 @@ pre {
     }
 }
 
+
+button {
+  padding: 1em 1.8em 1em 1.8em;
+  //font-weight: 900;
+  border: none;
+  background: $grey-color-dark;
+  color: $light-text-color;
+  min-width: 120px;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
 
 /**

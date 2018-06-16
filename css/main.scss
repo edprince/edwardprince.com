@@ -7,12 +7,15 @@
 
 // Our variables
 $base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$paragraph-font-family: "Crimson Text", serif;
+//$paragraph-font-family: "Crimson Text", serif;
 $base-font-size:   16px;
 $base-font-weight: 400;
 $heading-font-weight: 900;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.8;
+
+$color1: #4db6ac;
+$color2: #d66969;
 
 $spacing-unit:     30px;
 
@@ -20,8 +23,10 @@ $text-color:       #111;
 $background-color: #fdfdfd;
 $brand-color:      #2a7ae2;
 
+$light-text-color: #fafafa;
 $grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%); $grey-color-dark:  darken($grey-color, 25%); // Width of the content area
+$grey-color-light: lighten($grey-color, 40%); 
+$grey-color-dark:  darken($grey-color, 25%); // Width of the content area
 $dominant-color: #6194DF;
 $content-width:    800px;
 
@@ -85,7 +90,9 @@ body {
 }
 
 #banner1 {
-  background-image: url('../images/banner.jpg');
+  //background-image: url('../images/banner.jpg');
+  background: $color1;
+  font-size: 2.5em;
 }
 
 #banner2 {
@@ -152,6 +159,10 @@ form input, form textarea {
   color: white;
 }
 
+.light {
+  color: $light-text-color;
+}
+
 .button {
   padding-left: 1.5em;
   padding-right: 1.5em;
@@ -173,4 +184,15 @@ iframe {
 .left-align {
   margin-left: 0;
   text-align: left;
+}
+
+.site-nav {
+  font-weight: bold;
+}
+
+.top-color1 {
+  border-top: solid 5px $color1;
+}
+.top-color2 {
+  border-top: solid 5px $color2;
 }
