@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/edprince/edwardprince.com#readme",
   "dependencies": {
-    "pebble-css": "^0.1.2"
+    "pebble-css": "^0.1.23"
   }
 }

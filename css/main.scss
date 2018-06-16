@@ -17,11 +17,12 @@ $base-line-height: 1.8;
 $color1: #4db6ac;
 $color2: #d66969;
 
-$spacing-unit:     30px;
+$spacing-unit:     75px;
 
 $text-color:       #111;
 $background-color: #fdfdfd;
 $brand-color:      #2a7ae2;
+$dark-color: #26292e;
 
 $light-text-color: #fafafa;
 $grey-color:       #828282;
@@ -92,6 +93,12 @@ body {
 #banner1 {
   //background-image: url('../images/banner.jpg');
   background: $color1;
+}
+
+#banner1 h1 {
+  font-size: 5em;
+}
+#banner1 p {
   font-size: 2.5em;
 }
 
@@ -170,6 +177,10 @@ form input, form textarea {
   cursor: pointer;
 }
 
+.btn i {
+  margin-right: .5em;
+}
+
 iframe {
   display: block;
   margin: 0 auto;
@@ -195,4 +206,7 @@ iframe {
 }
 .top-color2 {
   border-top: solid 5px $color2;
+}
+.top-color3 {
+  border-top: solid 5px $dark-color;
 }

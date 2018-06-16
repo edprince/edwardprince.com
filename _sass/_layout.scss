@@ -260,4 +260,15 @@ button i {
   background: white;
   padding: 1em;
   box-sizing: border-box;
+  box-shadow: 7px 7px 22px #efefef;
+}
+
+.index-grid {
+  text-align: center;
+}
+
+.index-grid img {
+  display: inline-block;
+  height: 100px;
+  margin: 1em;
 }
