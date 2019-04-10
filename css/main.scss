@@ -59,11 +59,41 @@ $on-laptop:        800px;
   .narrow {
     width: 90%;
   }
+  .page-banner {
+    text-align: center;
+  }
+
+  #banner1 h1 {
+    margin-top: 1em;
+  }
+
+  .page-banner hr {
+    margin: 0 auto;
+    margin-bottom: 1em;
+  }
 }
 
 @media (min-width: 641px) {
   .narrow {
     width: 40%;
+  }
+  .page-banner {
+    //padding-left: 5em;
+    //padding-right: 5em;
+  }
+  .page-banner #banner-img {
+    float: right;
+  }
+
+}
+
+@media (min-width: 1300px) {
+  .page-banner {
+    //padding-left: 20em;
+    //padding-right: 20em;
+  }
+  .page-banner #banner-img {
+    float: right;
   }
 }
 
@@ -83,23 +113,51 @@ body {
 
 .page-banner {
   background-size: cover;
-  text-align: center;
+  //text-align: center;
   color: white;
   height: 100vh;
   padding-top: 2em;
   background-attachment: fixed;
 }
 
+.page-banner hr {
+  width: 30%;
+  border: solid 1px red;
+  margin-top: -1em;
+}
+
 #banner1 {
   //background-image: url('../images/banner.jpg');
   background: $color1;
+  background-image: url('https://screenshot.codepen.io/12341.LveDx.147d32dc-b16e-4e9e-a30c-d142983b13f8.png');
+  background-size: cover;
+}
+
+#banner-img {
+  box-shadow: 5px 5px 20px #482e25;
 }
 
 #banner1 h1 {
-  font-size: 5em;
+  font-size: 3em;
+  font-weight: 100;
 }
+#banner1 .subtitle {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: -3em;
+}
+
+#banner1 .btn {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
 #banner1 p {
-  font-size: 2.5em;
+  color: white;
+  margin-top: 1em;
+  font-size: 1.5em;
+  font-weight: 100;
 }
 
 #banner2 {

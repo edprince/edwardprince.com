@@ -1,4 +1,4 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
   <head>
@@ -6,16 +6,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Home</title>
-  <meta name="description" content="Balancing a life of technology and climbing.
-">
+  <title>Learning Polymer 3.0</title>
+  <meta name="description" content="">
 
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,900" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <link rel="stylesheet" href="node_modules/pebble-css/pebble.css" />
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://edwardprince.com/">
+  <link rel="canonical" href="http://edwardprince.com/primary/2018/06/28/polymer1.html">
   <link rel="alternate" type="application/rss+xml" title="Ed Prince" href="http://edwardprince.com/feed.xml">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
      integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
@@ -86,98 +85,79 @@
 </header>
 
 
-    <div id="banner1" class="page-banner">
-      <div class='vertical-align wrapper'>
-        <div class="row">
-          <div class="col-4">
-            <h1 class="light">Ed Prince</h1>
-            <p class="subtitle light">Web Developer</p>
-            <hr />
-            <p>Free lance techie, climber and guitarist.</p>
-            <a href="/contact"><button class="btn btn-secondary">Get in touch</button></a>
-          </div>
-          <div class="col-8">
-            <img class='round' id='banner-img' src="/images/profile.jpg" alt="Ed Prince" style="width: 250px;"/>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="page-content bg-lightgrey">
-      <div class="wrapper">
-        <div class="row">
-          <h2>
-            <i class='fa fa-feather'></i> Light 
-          </h2>
-          <p>I create lightweight, efficient websites, with fast load times and snappy user experience. This site was build using <a href="https://edprince.github.io/pebble">Pebble CSS Framework</a>, my custom built framework.</p>
-          <h2>
-            <i class='fa fa-mobile'></i> Responsive. 
-          </h2>
-          <p>With the ever-increasing mobile traffic, it is essential to design sites that work on any device. Try loading this page on a mobile. Or better - shrink this window. The site still looks great.</p>
-          <h2 class="">
-            <i class='fa fa-cog'></i> Custom.
-          </h2>
-          <p>Take as little or as large a role as you wish in the design process - I'll work from templates, or design the site from the ground up.</p>
-        </div>
-      </div>
-    </div>
-
-    <!--
     <div class="page-content">
       <div class="wrapper">
-        <div class="row">
-          <h2>Pricing</h2>
-          <div class="col-4">
-            <div class="card top-color1">
-              <h3>Feasibility</h3>
-              <h1><small style="font-size: .5em">£</small>99</h1>
-              <p>I will conduct a feasibility study on your site, determining the scope and achievability of the project</p>
-              <button class="btn btn-primary">Learn More</button>
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="card top-color2">
-              <h3>Static</h3>
-              <h1><small style="font-size: .5em">£</small>350</h1>
-              <p>You get a simple website, either designed for you, with you, or based fully on your design, along with
-              easy methods of updating content</p>
-              <button class="btn btn-primary">Learn More</button>
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="card top-color3">
-              <h3>Complex Web App</h3>
-              <h1><small style="font-size: .5em">£</small>2500</h1>
-              <p>You get a sophistocated web app</p>
-              <button class="btn btn-primary">Learn More</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
--->
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-    <div class="page-content">
-      <div class="wrapper">
-        <div class="row">
-          <h2>Technologies</h2>
-        </div>
-      </div>
-      <div class="wrapper index-grid">
-        <div class="row">
-            <img  src="../images/homepage/js.png" />
-            <img src="../images/homepage/html.png" />
-            <img src="../images/homepage/css.png" />
-            <img  src="../images/homepage/firebase.png" />
-            <img src="../images/homepage/github.png" />
-            <img src="../images/homepage/react.png" />
-            <img src="../images/homepage/jekyll.svg" />
-            <img src="../images/homepage/npm.png" />
-            <img src="../images/homepage/node.png" />
-            <img src="../images/homepage/express.png" />
-            <img src="../images/homepage/webpack.png" />
-            <img src="../images/homepage/leaflet.png" />
-          </div>
-        </div>
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Learning Polymer 3.0</h1>
+    <p class="post-meta"><time datetime="2018-06-28T00:00:02+01:00" itemprop="datePublished">Jun 28, 2018</time></p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p><img src="/images/polymer/polymer_logo.png" /></p>
+
+<h1 id="confession">Confession</h1>
+
+<p>Before we get started, I have to confess that I am new to Polymer, 
+never used previous versions, so this series is as much for me as
+I progress on my own journey with Polymer, and hopefully it can be
+useful as a different perspective some others.</p>
+
+<p>The other imporant note, is that this is a tutorial for Linux users.
+I’m not sure where the differences lie between the setup and use
+for Winodws/Mac, so I won’t cover them.</p>
+
+<h2 id="what-is-polymer">What is Polymer?</h2>
+
+<p>Polymer is a way of building web applications using reusable
+components.</p>
+
+<h2 id="installation-and-setup">Installation and Setup</h2>
+
+<p>One of the big differences between Polymer 2.0 and 3.0 is the use
+of <em>npm</em> over <em>bower</em> - so we will be using <em>npm</em> a lot, so make sure
+you have NodeJS installed.</p>
+
+<p>To get started, we need to install the polymer command line interface
+with:</p>
+
+<p><code class="highlighter-rouge">npm install -g polymer-cli</code></p>
+
+<p>Now, at first I tried to use the <em>polymer-3-starter-kit</em>, but hit
+problems right from the beginning. I had much more luck cloning
+<a href="https://github.com/PolymerLabs/start-polymer3">this</a> repository.</p>
+
+<p><code class="highlighter-rouge">git clone https://github.com/PolymerLabs/start-polymer3.git</code></p>
+
+<p><code class="highlighter-rouge">cd start-polymer3</code></p>
+
+<p>Moves into the new directory.</p>
+
+<p><code class="highlighter-rouge">npm install</code></p>
+
+<p>Installs all dependencies required.</p>
+
+<p><code class="highlighter-rouge">polymer serve</code></p>
+
+<p>Serve onto localhost.</p>
+
+<h2 id="using-components">Using Components</h2>
+
+<p>Install your component from npm.</p>
+
+<p><code class="highlighter-rouge">npm install @polymer/web-component</code></p>
+
+<p>This adds the component to your <code class="highlighter-rouge">node_modules/</code> directory. Then
+in the file you wish to use this component, import it using:</p>
+
+<p><code class="highlighter-rouge">import "@polyerm/web-component/web-component.js";</code></p>
+
+
+  </div>
+
+</article>
+
       </div>
     </div>
 
