@@ -523,6 +523,11 @@ body {
   padding-top: 2em;
   background-attachment: fixed; }
 
+.page-banner i {
+  font-size: 1.3em;
+  color: #bfb9b9;
+  font-weight: 900; }
+
 .page-banner hr {
   width: 30%;
   border: solid 1px red;
@@ -553,7 +558,7 @@ body {
 #banner1 p {
   color: white;
   margin-top: 1em;
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: 100; }
 
 #banner2 {
