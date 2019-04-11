@@ -21,6 +21,11 @@
     float: left;
   }
 
+  .col-4-small {
+    width: 30%;
+    float: left;
+  }
+
   .col-5 {
     width: 100%;
     float: left;
